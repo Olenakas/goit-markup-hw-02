@@ -7,27 +7,28 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: #2E2F42;
+    background-color: white;
 }
 /*==========COMPONENTS==========*/
-h1{
+.title{
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #FFFFFF;
 }
-h2{
+.heading{
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;    
 }
-h3{
+.subtitle{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;    
 }
-p{
+.body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -54,7 +55,8 @@ p{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;    
+    letter-spacing: 0.02em;
+    color: #2E2F42;    
 }
 .menu-link:hover,
 .menu-link:focus{
@@ -93,11 +95,11 @@ p{
     background: #404BBF;
 }
 /*==========/HERO SECTION==========*/
-/*==========FUTHER==========*/
+/*==========FOOTER==========*/
 .text-theme-dark{
     color: #E7E9FC;
 }
-/*==========/FUTHER==========*/
+/*==========/FOOTER==========*/
 /*==========FILTRES==========*/
 .filtres-btn{
     font-weight: 500;
