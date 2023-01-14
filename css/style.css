@@ -1,3 +1,11 @@
+:root{ 
+    --accent-color: #4d5fe5; 
+    --primary-text-color-theme-light: #2e2f42;
+    --primary-text-color-theme-dark:#ffff;
+    --secondary-text-color-theme-light: #434455;
+    --secondary-text-color-theme-dark: #e7e9fc;
+    --logo-text-color-theme-dark-part-two: #F4F4FD;
+}
 .list {
     list-style: none;
 }
@@ -6,15 +14,15 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    color: #2E2F42;
-    background-color: white;
+    color: var(--primary-text-color-theme-light);
+    background-color: #ffff;
 }
 /*==========COMPONENTS==========*/
 .title{
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--primary-text-color-theme-dark);
 }
 .heading{
     font-size: 36px;
@@ -28,12 +36,13 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;    
 }
-.body{
+.text-body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;  
+    color: var(--secondary-text-color-theme-light);  
 }
+
 /*logo*/
 .logo-text-part-one{
     font-family: 'Raleway';
@@ -42,40 +51,38 @@ body{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--accent-color);
 }
 .logo-text-part-two-theme-light{
-    color: #2E2F42;
+    color: var(--primary-text-color-theme-light);
 }
 .logo-text-part-two-theme-dark{
-    color: #F4F4FD;
-}
+    color: #F4F4FD;}
+
 /*==========HEADER==========*/
 .menu-link{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;    
+    color: var(--primary-text-color-theme-light);    
 }
 .menu-link:hover,
 .menu-link:focus{
-    color: #404BBF;
+    color: var(--accent-color);
 }
 .contact{
     font-weight: 400;
     font-size: 16px;
     line-height: 0.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--secondary-text-color-theme-light);
 }
 .contact:hover,
 .contact:focus{
-    color:#404BBF
+    color: var(--accent-color);
 }
 /*==========/HEADER==========*/
-
-
 /*==========HERO SECTION==========*/
 .btn{
     cursor: pointer;
@@ -85,19 +92,19 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background: #4D5AE5;
+    color: var(--primary-text-color-theme-dark);
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;   
 }
 .modal-btn:hover,
 .modal-btn:focus{
-    background: #404BBF;
+    background: var(--accent-color);
 }
 /*==========/HERO SECTION==========*/
 /*==========FOOTER==========*/
 .text-theme-dark{
-    color: #E7E9FC;
+    color: var(--secondary-text-color-theme-dark);
 }
 /*==========/FOOTER==========*/
 /*==========FILTRES==========*/
@@ -111,8 +118,8 @@ body{
 }
 .filtres-btn:hover,
 .filtres-btn:focus{
-    color: #FFFFFF;
-    background: #404BBF;
+    color: var(--primary-text-color-theme-dark);
+    background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
