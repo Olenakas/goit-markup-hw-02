@@ -1,10 +1,13 @@
 :root{ 
     --accent-color: #4d5fe5; 
+    --accent-color-hover: #404BBF;
     --primary-text-color-theme-light: #2e2f42;
     --primary-text-color-theme-dark:#ffff;
     --secondary-text-color-theme-light: #434455;
-    --secondary-text-color-theme-dark: #e7e9fc;
-    --logo-text-color-theme-dark-part-two: #F4F4FD;
+    --secondary-text-color-theme-dark: #e7e9fc;    
+    --background-color-body-theme-light: #fff;
+    --additiomal-color: #F4F4FD;
+
 }
 .list {
     list-style: none;
@@ -15,7 +18,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color-theme-light);
-    background-color: #ffff;
+    background-color: var(--background-color-body-theme-light);
 }
 /*==========COMPONENTS==========*/
 .title{
@@ -57,7 +60,7 @@ body{
     color: var(--primary-text-color-theme-light);
 }
 .logo-text-part-two-theme-dark{
-    color: #F4F4FD;}
+    color: var(--additiomal-color);}
 
 /*==========HEADER==========*/
 .menu-link{
@@ -66,6 +69,9 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-theme-light);    
+}
+.memu-link-active{
+    color: var(--accent-color);
 }
 .menu-link:hover,
 .menu-link:focus{
@@ -99,7 +105,7 @@ body{
 }
 .modal-btn:hover,
 .modal-btn:focus{
-    background: var(--accent-color);
+    background: var(--accent-color-hover);
 }
 /*==========/HERO SECTION==========*/
 /*==========FOOTER==========*/
@@ -112,7 +118,7 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5x;
-    background: #F4F4FD;
+    background: var(--additiomal-color);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
 }
